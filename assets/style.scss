@@ -1,0 +1,196 @@
+$primary-color: rgb(4, 77, 62);
+$primary-color-lighter: rgb(5, 79, 42, 0.6);
+$secondary-color: bisque;
+
+.green-background {
+    background-color: $primary-color;
+
+    li {
+        font-size: 18px;
+        color: white;
+    }
+}
+
+.bisque-background {
+    background-color: $secondary-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Courier Prime", monospace;
+}
+
+.block-head {
+    margin-top: -120px;
+    padding: 100px 0 10px;
+    background-color: $primary-color;
+    &--text {
+        border-top: 1px grey solid;
+        color: bisque;
+        letter-spacing: 5px;
+        text-align: center;
+        vertical-align: middle;
+
+        .h1 {
+            padding-top: 20px;
+            color: white;
+            text-transform: uppercase;
+            text-shadow: 1px 1px 2px black;
+        }
+    }
+}
+
+.text-white {
+    color: white;
+}
+
+.btn--primary {
+    background-color: $secondary-color;
+    color: $primary-color;
+    padding: 8px 24px;
+}
+
+.bi {
+    font-size: 50px;
+    color: $secondary-color;
+}
+
+.btn {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+section {
+    padding: 70px 0;
+}
+
+.footer {
+    height: 100px;
+    &--text {
+        padding-top: 40px;
+        color: bisque;
+    }
+}
+
+header {
+    height: 120px;
+}
+
+.bg-transparent {
+    background-color: transparent;
+}
+
+.navbar-nav {
+    .nav-link {
+        color: bisque;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+
+        &.active{
+            color: white;
+        }
+    }
+}
+
+.magnet {
+    height: 90vh;
+    overflow: hidden;
+    background: linear-gradient($primary-color, $primary-color-lighter), url("https://cdn.pixabay.com/photo/2017/02/01/09/55/tatry-2029265_1280.jpg") fixed bottom center;
+    background-size: cover;
+    padding: 80px 0;
+    margin-top: -120px;
+
+    &--text {
+        color: bisque;
+        letter-spacing: 5px;
+        text-align: center;
+        height: 90vh;
+        vertical-align: middle;
+
+        .h1 {
+            color: white;
+            text-transform: uppercase;
+            text-shadow: 1px 1px 2px black;
+        }
+
+        p, .btn {
+            text-transform: uppercase;
+        }
+    }
+}
+
+.green-block {
+    height: 100%;
+    background-color: $primary-color;
+    z-index: 1;
+}
+.therapy {
+    &--image {
+        border-left: 30px solid $primary-color;
+        border-top: 30px solid $primary-color;
+        border-radius: 10px 10px 0px;
+    }
+}
+
+.about-me {
+    &--image {
+        border-right: 30px solid $primary-color;
+        border-bottom: 30px solid $primary-color;
+        border-radius: 10px 10px 0px;
+    }
+}
+
+.event-price {
+    padding: 7vh 0 2vh;
+    .text {
+        color: white;
+    }
+    &__item {
+        border: 1px solid white;
+        margin-bottom: 20px;
+        &-header {
+            background-color: $secondary-color;
+            padding: 25px 30px 10px;
+            border: 1px solid $primary-color;
+            h3 {
+                font-size: 25px;
+            }
+        }
+        &-body {
+            background-color: $secondary-color;
+            padding: 30px;
+            ul {
+                margin: 0;
+                padding: 0;
+                li {
+                    list-style: none;
+                    color: black;
+                    font-size: 18px;
+                    line-height: 40px;
+                }
+            }
+        }
+        &-price {
+            background-color: $secondary-color;
+            border: 1px solid $primary-color;
+            padding: 25px 10px 10px;
+            h1 {
+                font-size: 35px;
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .fixed-top {
+        background-color: $primary-color;
+    }
+
+    .about-me {
+        img {
+            z-index: 1000;
+            margin: 10%;
+            width: 100%;
+            height: auto;
+        }
+    }
+}

@@ -23,20 +23,23 @@
         <link href="assets/style.css" rel="stylesheet">
     </head>
     <body>
-        <header id="header" class="header fixed-top" data-scrollto-offset="0">
+        <header id="header" class="header" data-scrollto-offset="0">
             <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#"><img src="assets/mountain-removebg-preview.png" width="auto" height="80px"></a>
+                    <a class="navbar-brand" href="index.html"><img src="assets/images/mountain.png" width="auto" height="80px"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav">
+                            <li class="nav-item px-lg-4 px-0 ps-3">
+                                <a class="nav-link active" href="index.html">Domov</a>
+                            </li>
                             <li class="nav-item ps-lg-2 ps-3">
-                                <a class="nav-link active" aria-current="page" href="objednanie.html">Objednať sa</a>
+                                <a class="nav-link" aria-current="page" href="objednanie.html">Objednať sa</a>
                             </li>
                             <li class="nav-item px-lg-4 px-0 ps-3">
-                                <a class="nav-link" href="#about-me">O mne</a>
+                                <a class="nav-link" href="o-mne.html">O mne</a>
                             </li>
                             <li class="nav-item px-lg-4 px-0 ps-3">
                                 <a class="nav-link" href="#therapy">Terapie</a>
@@ -48,23 +51,85 @@
                     </div>
                 </div>
             </nav>
-        </header><!-- End Header -->
-        <div class="container-fluid magnet">
-            <div class="magnet--text row align-items-center">
-                <div class="col-12">
-                    <h1 class="h1">Objednanie sa</h1>
-                    <p>Psychoterapie s cieľom uzdravovať sa a rásť.</p>
-                    <a href="" class="btn btn-light">Objednať sa</a>
+        </header>
+        <div class="container-fluid block-head">
+            <div class="block-head--text row align-items-center">
+                <div class="col-10 offset-1">
+                    <h1 class="h1">Objednať sa</h1>
                 </div>
             </div>
         </div>
-        <section class="about-me">
-            O mne
+        <section class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-lg-8 offset-lg-2">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Emailová adresa</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput2" class="form-label">Meno priezvisko</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="Meno Priezvisko">
+                    </div>
+                    <div class="row">
+                        <div class="mb-3 col-6">
+                            <label for="exampleFormControlInput3" class="form-label">Dátum</label>
+                            <input type="date" class="form-control" id="exampleFormControlInput3">
+                        </div>
+                        <div class="mb-3 col-6">
+                            <label for="exampleFormControlInput4" class="form-label">Čas</label>
+                            <input type="time" class="form-control" id="exampleFormControlInput4">
+                        </div>
+                    </div>
+                    <select class="form-select mb-3" aria-label="Default select example">
+                        <option selected>Typ sedenia</option>
+                        <option value="1">Len pre mňa</option>
+                        <option value="2">Konzultácia</option>
+                        <option value="3">Rodinné sedenie</option>
+                      </select>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Vaša správa</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"  placeholder="Dobrý deň, rád/a by som sa objednal/a..."></textarea>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Súhlasím so spracovaním osobných údajov
+                        </label>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section class="therapy">
-            terapie
+        <section class="english bisque-background">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6 offset-lg-3 text-center">
+                        <h3 class="text-center">I offer sessions in English. I am here to support you on your journey of self-discovery and personal growth.</h3>
+                        <a href="" class="btn btn-light btn--primary">Interested</a>
+                    </div>
+                </div>
+            </div>
         </section>
-        <footer class="footer"></footer>
+        <footer class="footer green-background">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6 offset-lg-2">
+                        <div class="container footer--text">
+                            <div class="row d-flex">
+                                <div class="col-6">
+                                    <p>Pravidlá spolupráce</p>
+                                </div>
+                                <div class="col-6">
+                                    <p>GDPR</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-2">
+                        <p class="footer--text text-right">&copy;2025 Ivana Klimentová</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
         <script src="assets/bootstrap.min.js"></script>
     </body>
 </html>
